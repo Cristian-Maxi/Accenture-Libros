@@ -6,7 +6,6 @@ import AccentureLibros.dtos.libroDTO.LibroResponseDTO;
 import AccentureLibros.models.Autor;
 import AccentureLibros.models.Libro;
 import AccentureLibros.repositories.AutorRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

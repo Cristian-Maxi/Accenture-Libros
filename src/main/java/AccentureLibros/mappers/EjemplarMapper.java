@@ -19,11 +19,13 @@ import java.time.LocalDate;
 @Component
 public class EjemplarMapper {
 
-    @Autowired
     private static UsuarioRepository usuarioRepository;
-
-    @Autowired
     private static LibroRepository libroRepository;
+
+    public EjemplarMapper(UsuarioRepository usuarioRepository, LibroRepository libroRepository) {
+        EjemplarMapper.usuarioRepository = usuarioRepository;
+        EjemplarMapper.libroRepository = libroRepository;
+    }
 
     public static EjemplarResponseDTO toResponseDTO(Ejemplar ejemplar) {
         return new EjemplarResponseDTO(
